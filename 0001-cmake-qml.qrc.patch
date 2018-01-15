@@ -1,0 +1,42 @@
+From 79d760c61c5b73630bd9a7ac2956cde7880adc18 Mon Sep 17 00:00:00 2001
+From: lowy <lowy@debian>
+Date: Mon, 15 Jan 2018 09:44:58 +0800
+Subject: [PATCH 1/3] =?UTF-8?q?=E5=BC=A5=E8=A1=A5cmake=E4=B8=AD=E7=9A=84?=
+ =?UTF-8?q?=E7=BC=BA=E5=B0=91=E6=96=87=E4=BB=B6qml.qrc?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+---
+ qml.qrc | 19 +++++++++++++++++++
+ 1 file changed, 19 insertions(+)
+ create mode 100644 qml.qrc
+
+diff --git a/qml.qrc b/qml.qrc
+new file mode 100644
+index 0000000..3fbc3f3
+--- /dev/null
++++ b/qml.qrc
+@@ -0,0 +1,19 @@
++<RCC>
++    <qresource prefix="/">
++        <file>qml/main.qml</file>
++        <file>qml/MainForm.ui.qml</file>
++        <file>qml/Login.qml</file>
++        <file>qml/LoginForm.ui.qml</file>
++        <file>qml/ScrollBar.qml</file>
++        <file>qml/Balloon.qml</file>
++        <file>qml/BalloonForm.ui.qml</file>
++        <file>qml/WinInfo.qml</file>
++        <file>qml/Setup.qml</file>
++        <file>qml/SetupForm.ui.qml</file>
++        <file>qml/About.qml</file>
++        <file>qml/AboutForm.ui.qml</file>
++        <file>qml/Dict.qml</file>
++        <file>qml/Upgrade.qml</file>
++        <file>qml/UpgradeForm.ui.qml</file>
++    </qresource>
++</RCC>
+-- 
+2.15.1
+

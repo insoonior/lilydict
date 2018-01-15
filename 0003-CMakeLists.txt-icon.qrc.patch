@@ -1,0 +1,30 @@
+From 3ab95dcb9215b865ef5b9962d3e89aef6fe02fe7 Mon Sep 17 00:00:00 2001
+From: lowy <lowy@debian>
+Date: Mon, 15 Jan 2018 09:56:47 +0800
+Subject: [PATCH 3/3] =?UTF-8?q?=E4=BF=AE=E6=AD=A3CMakeLists.txt=E6=96=87?=
+ =?UTF-8?q?=E4=BB=B6=E4=B8=ADicon.qrc=E7=9A=84=E6=8B=BC=E5=86=99=E9=94=99?=
+ =?UTF-8?q?=E8=AF=AF?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+---
+ CMakeLists.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index ab22194..bb04728 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -47,7 +47,7 @@ ENDIF(WIN32)
+ IF (APPLE)
+ SET(GUI_TYPE MACOSX_BUNDLE)
+ ENDIF (APPLE)
+-add_executable(${PROJECT_NAME} ${GUI_TYPE} ${SRC_LIST} qml.qrc icons.qrc app.rc)
++add_executable(${PROJECT_NAME} ${GUI_TYPE} ${SRC_LIST} qml.qrc icon.qrc app.rc)
+ 
+ if(UNIX)
+     set(LINK_FLAGS "-lpthread -ldl -lgmp")
+-- 
+2.15.1
+
